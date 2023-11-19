@@ -1,4 +1,5 @@
-## To-Do-List Using FastAPI, SQLAlchemy, PostgreSQL 
+## To-Do-List Using FastAPI, SQLAlchemy, PostgreSQL
+# Step 1: Creating Database and defining API interface
 # Database 
 Database created using PostgreSQL, pgAdmin 4 and SQLAlchemy. 
 Table Task consists of 
@@ -64,3 +65,5 @@ def get_exact_task(id: int, db: SessionLocal = Depends(get_db)):
     return task
 ```
 get_exact_task(id, db) returns task with id argument. But before it returns the task, the program has to implement get_db() function to create the session. While the session is active, we can make SQL querys to database.
+
+# Step 2: Adding autorization
